@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Jardin de infantes denominado El principito situado en Ramos Mej&iacute;a">
+    <meta name="author" content="Fernando Carre&ntilde;o">
+    <title>Jard&iacute;n De Infantes | El Principito</title>
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+    <link href="css/creative.min.css" rel="stylesheet">
+    <link href="css3/formulario.css" rel="stylesheet">
+    <!--<script src="JQuery/jquery-2.1.4.min.js"></script>
+    <script src="JQuery/formulario.js"></script>-->
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css">
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<script src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
+    
+    <script type="text/javascript">
+        $(function(){
+            $("#fecha").datepicker();
+        });
+    </script>
+</head>
+<body id="page-top">
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="index.html">Jard&iacute;n De Infantes | El Principito</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="historia.html">Historia</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="galeria.html">Galer&iacute;a</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="formulario.html">Formulario</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <div class="header-content">
+            <div class="header-content-inner">
+                <h1 id="homeHeading">El Principito</h1>
+                <h2>Formulario</h2>
+                <a href="#contact-form" class="btn btn-primary btn-xl page-scroll">Formulario</a>
+                <hr>
+                <p>Pero si me domesticas, entonces tendremos necesidad el uno del otro. T&uacute; ser&aacute;s para mi &uacute;nico en el mundo, yo ser&eacute; para ti &uacute;nico en el mundo</p>
+                <a href="#carousel-example-generic" class="btn btn-primary btn-xl page-scroll">Carrousel</a>
+            </div>
+        </div>
+    </header>
+    <section class="bg-primary" id="home">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+						<ol class="carousel-indicators">
+							<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+          					<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+          					<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+						</ol>
+						<div class="carousel-inner" role="listbox">
+						<div class="item active">
+							<img src="Imagenes/manos.jpg_1572130063.jpg" alt="First slide">
+						</div>
+						<div class="item">
+							<img src="Imagenes/jardin-infantes-villa-del-parque-full.jpg" alt="Second slide">
+						</div>
+						<div class="item">
+							<img src="Imagenes/caratula2.jpg" alt="Third slide">
+						</div>
+						</div>
+						<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+							<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+							<span class="sr-only"></span>
+						</a>
+						<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+							<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+							<span class="sr-only"></span>
+						</a>
+					</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact-form">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+            <div class="text-center txt">Formulario de contacto</div>
+                <div class="contenedor-formulario">
+                    <div class="wrap">
+                        <form action="" method="post" class="formulario" name="formulario_registro">
+                            <div>
+                                <fieldset class="input-group">
+                                    <input type="text" name="nombre_apellido" id="nombre_apellido" placeholder="Escriba su nombre y apellido"><!--descomentar los label para la validacion en javascript-->
+                                    <label for="nombre_apellido" class="label">Nombre y Apellido:</label>
+                                    <div class="errores" id="mensaje1">Escriba su nombre y apellido</div>
+                                </fieldset>
+                                <fieldset class="input-group">
+                                    <input type="text" name="dni" id="dni" placeholder="Escriba su dni">
+                                    <label for="dni" class="label">Dni:</label>
+                                    <div class="errores" id="mensaje2">Escriba su dni</div>
+                                </fieldset>
+                                <fieldset class="input-group">
+                                    <input type="text" name="fecha_nacimiento" id="fecha" placeholder="Seleccione su fecha de nacimiento">
+                                    <label for="fecha_nacimiento" class="label">Fecha de nacimiento:</label>
+                                    <div class="errores" id="mensaje3">Seleccione su fecha de nacimiento</div>
+                                </fieldset>
+                                <fieldset class="input-group">
+                                    <input type="email" name="email" id="email" placeholder="Escriba su email">
+                                    <label for="email" class="label">E-Mail:</label>
+                                    <div class="errores" id="mensaje4">Escriba su email</div>
+                                </fieldset>
+                                <fieldset class="input-group">
+                                    <input type="password" name="password" id="password" placeholder="Escriba una contrase&ntilde;a">
+                                    <label for="password" class="label">Contrase&ntilde;a:</label>
+                                    <div class="errores" id="mensaje5">Escriba su contraseña</div>
+                                </fieldset>
+                                <fieldset class="input-group">
+                                    <input type="password" name="password2" id="password2" placeholder="Repita la contrase&ntilde;a">
+                                    <label for="password2" class="label">Repetir Contrase&ntilde;a:</label>
+                                    <div class="errores" id="mensaje6">Reingrese su contraseña</div>
+                                </fieldset>
+                                    <input type="submit" id="btn-submit" value="Enviar">
+                                    <div class="errores" id="mensaje7">El formulario se envio con exito</div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </section>
+    <section id="contact">
+        <div class="container container-footer">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">&copy; Fernando Carre&ntilde;o 2016</h2>
+                    <hr class="primary">
+                    <p>Su tranquilidad esta en nuestras manos</p>
+                </div>
+                <div class="col-lg-4 col-lg-offset-2 text-center">
+                    <i class="fa fa-phone fa-3x sr-contact"></i>
+                    <p>4658-4888</p>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <i class="fa fa-envelope-o fa-3x sr-contact"></i>
+                    <p><a href="mailto:jardinelprincipito@gmail.com">jardinelprincipito@gmail.com</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="js/creative.min.js"></script>
+    <script src="JavaScript/formulario.js"></script><!--descomentar para la validacion en javascript-->
+</body>
+</html>

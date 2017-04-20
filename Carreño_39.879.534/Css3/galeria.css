@@ -1,0 +1,15 @@
+#contact
+{
+	width: 100%;
+	background:#E2BE1E;
+}
+.sala3,.sala3_1,.sala3_2,.sala4,.sala4_1,.sala4_2,.sala5,.sala5_1,.sala5_2
+{
+	width: 733px;
+	height: 500px;
+    margin-left: 10px;
+}
+#contact-img
+{
+	background:#E2D91E;
+}
